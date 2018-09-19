@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">طبيـبك</string>
+
+    <string name="Search_By"> Search_By </string>
+    <string name="Search_patient_By"> Search_patient_By </string>
+
+    <string name="Choose_Speciality"> Choose_Speciality </string>
+    <string name="Choose_Location"> Choose Location </string>
+
+
+    <string-array name="Search_patient_By">
+        <item>بالآسم</item>
+        <item>بالتخصص</item>
+        <item>بالعنوان</item>
+        <item>مناسب لآعراضك</item>
+    </string-array>
+
+    <string-array name="Search_By">
+        <item>بالآسم</item>
+        <item>بالتخصص</item>
+        <item>بالعنوان</item>
+        <item> مناسب لآعراضك</item>
+    </string-array>
+
+    <string-array name="Choose_Speciality">
+        <item>دكتور انف واذن وحنجره</item>
+        <item>دكتور باطني</item>
+        <item>دكتور امراد الدم</item>
+        <item>دكتور عيون</item>
+        <item>اخصائي غدد صماء</item>
+        <item>دكتور جلديه</item>
+        <item>دكتور عظام</item>
+        <item>دكتور اسنان</item>
+        <item>دكتور امراض الجهاز التنفسي</item>
+        <item>دكتور قلب واوعيه دمويه</item>
+        <item>دكتور باطنه وجهاز هضمي</item>
+        <item>دكتور اعصاب</item>
+        <item>دكتور علاج طبيعي</item>
+        <item>دكتور مسالك بوليه</item>
+        <item>دكتور جلديه</item>
+
+    </string-array>
+
+
+    <string-array name="Choose_Symptoms">
+        <item>s1</item>
+        <item>s2</item>
+        <item>s3</item>
+        <item>s4</item>
+    </string-array>
+
+    <string-array name="Choose_Location">
+        <item>السيدةزينب</item>
+
+    </string-array>
+
+</resources>

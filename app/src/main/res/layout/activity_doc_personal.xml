@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.DocPersonalActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:layout_margin="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="حسـابكـ "
+            android:textColor="@color/black"
+            android:background="@color/primaryLightColor"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        >
+
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/doctorpersonalname"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:text="الاسم"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/showapp"
+        android:layout_centerInParent="true"
+        android:text="المواعيد المحـجــــوزة"
+        android:background="@color/primaryLightColor"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayoff"
+        android:text="اغلق مواعيد اليوم"
+        android:layout_below="@+id/showapp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/primaryLightColor"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:text="تسجيل الخروج"
+        android:background="@color/primaryLightColor"
+        android:layout_margin="10dp"
+        />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.08"
+        android:background="@color/primaryColor"
+        >
+
+        <TextView
+
+            android:id="@+id/copyy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="© 2018"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="23dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/contactdpersonal"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copyy"
+            android:text="تواصل معنا "
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            android:textStyle="bold"
+            />
+
+
+
+        <Button
+
+            android:id="@+id/aboutdpersonal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copyy"
+            android:text="معلومات عنا"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.LocationActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:layout_margin="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="بحـــث بعنــوان الدكــتور"
+            android:textColor="@color/black"
+            android:background="@color/primaryLightColor"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.58"
+        android:orientation="vertical">
+
+
+
+        <Spinner
+
+            android:layout_marginTop="50dp"
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Choose_Location"
+            android:prompt="@string/Choose_Location"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+
+        <Button
+            android:background="@color/primaryLightColor"
+            android:text="ابحـــث"
+            android:textAllCaps="false"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/g"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.08"
+        android:background="@color/primaryColor"
+        >
+
+        <TextView
+
+            android:id="@+id/copyy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="© 2018"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="23dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/contactlocation"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copyy"
+            android:text="تواصل معنا "
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            android:textStyle="bold"
+            />
+
+
+
+        <Button
+
+            android:id="@+id/aboutlocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copyy"
+            android:text="معلومات عنا"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

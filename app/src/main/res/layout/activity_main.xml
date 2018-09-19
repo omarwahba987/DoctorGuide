@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/primaryLightColor"
+    >
+
+
+    <LinearLayout
+        android:background="@color/primaryColor"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:weightSum="1">
+
+        <ImageButton
+            android:background="@color/primaryLightColor"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logooo" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.72"
+        android:background="@color/white"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البحث عن دكتور :"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+        <Spinner
+
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Search_By"
+            android:prompt="@string/Search_By"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/spinner1"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="البحث"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+        <Button
+            android:id="@+id/login"
+            android:background="@color/primaryLightColor"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSubmit"
+            android:layout_centerHorizontal="true"
+            android:text="تسجيل الدخول "
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            />
+
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_below="@id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:text="انشاء حساب"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="text-decoration: underline;"
+            android:layout_marginTop="15dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:background="@color/primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1">
+
+        <TextView
+
+            android:id="@+id/copy"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="© 2018"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_margin="8dp"
+            />
+
+
+
+
+        <Button
+
+            android:id="@+id/contactmain"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copy"
+            android:text="تواصل معنا "
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            android:textStyle="bold"
+            />
+
+
+        <Button
+
+            android:id="@+id/aboutmain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copy"
+            android:text="معلومات عنا"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

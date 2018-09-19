@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:background="@color/primaryLightColor"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجـيل الدخــول "
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+    <EditText
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:hint="البريد الالكترونى "
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <EditText
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:hint="كلمــة الســر "
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:id="@+id/pass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:textColor="@color/black"
+        android:text="تسجــيل الدخـــول"
+        android:textAllCaps="false"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/login"
+        android:textSize="16dp"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:background="@color/primaryLightColor"
+        />
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.08"
+        android:background="@color/primaryColor"
+        >
+
+        <TextView
+
+            android:id="@+id/copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="© 2018"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="23dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/contactlogin"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copy"
+            android:text="تواصل معنا "
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            android:textStyle="bold"
+            />
+
+
+
+        <Button
+
+            android:id="@+id/aboutlogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copy"
+            android:text="معلومات عنا"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>

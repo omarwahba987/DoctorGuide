@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.DocProfActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="حســاب الدكتـور"
+            android:textColor="@color/black"
+            android:background="@color/primaryLightColor"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/doctorprofilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="اسم الدكتور"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/doctorprofilespec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/doctorprofilename"
+            android:layout_margin="10dp"
+            android:textSize="19dp"
+            android:text="التخصص"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/doctorprofileaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/doctorprofilespec"
+            android:layout_margin="10dp"
+            android:textSize="19dp"
+            android:text="التقييم"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/doctorprofilerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/doctorprofileaca"
+            android:layout_margin="10dp"
+            android:textSize="17dp"
+            android:text="معلومات عنه"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/getmap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/primaryLightColor"
+            android:text="اعرف الطريق "
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/getmap"
+            android:background="@color/primaryLightColor"
+            android:text="اضافة الى قائمتك المفضلة "
+            android:textSize="18dp"
+
+            />
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/getmap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/primaryLightColor"
+            android:text="قيـــم"
+            android:textSize="18dp" />
+
+
+        <EditText
+            android:id="@+id/rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="ادخــل تقيــمك مــن 1 الي 5  "
+            android:layout_below="@+id/add"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctorprofilerate"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/primaryLightColor"
+            android:text="احجــــــــز   الآن "
+            android:textSize="22dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.08"
+        android:background="@color/primaryColor"
+        >
+
+        <TextView
+
+            android:id="@+id/copyy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="© 2018"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="23dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/contactdprofail"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copyy"
+            android:text="تواصل معنا "
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            android:textStyle="bold"
+            />
+
+
+
+        <Button
+
+            android:id="@+id/aboutdprofail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copyy"
+            android:text="معلومات عنا"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

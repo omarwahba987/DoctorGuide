@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.RegistrationActivity"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.07"
+    android:background="@color/primaryLightColor"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="انشـــاء حسـابــ"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+
+        />
+</LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:fitsSystemWindows="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_marginRight="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="15dp"
+        android:hint="اسم المستخدم "
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="115dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="15dp"
+            android:hint="البريد الالكترونى " />
+
+        <EditText
+            android:layout_marginRight="115dp"
+            android:layout_marginLeft="145dp"
+        android:layout_marginTop="15dp"
+        android:hint="كلمة الســر"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_marginRight="125dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="15dp"
+        android:hint="النـــوع"
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_marginRight="125dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="15dp"
+        android:hint="الســـن"
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_marginRight="125dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="15dp"
+        android:hint="رقم الموبايل"
+        android:id="@+id/pnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:phoneNumber="true"
+
+        />
+
+    <Button
+        android:textColor="@color/black"
+        android:text="انشـــاء"
+        android:textAllCaps="false"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/register"
+        android:textSize="16dp"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:background="@color/primaryLightColor"
+        />
+
+    </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.08"
+        android:background="@color/primaryColor"
+        >
+
+        <TextView
+
+            android:id="@+id/copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="© 2018"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="23dp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/contactreg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copy"
+            android:text="تواصل معنا "
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            android:textStyle="bold"
+            />
+
+
+
+        <Button
+
+            android:id="@+id/aboutreg"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_toRightOf="@id/copy"
+            android:text="معلومات عنا"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@color/primaryLightColor"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfouz.doctorgp.ContactActivity"
+    android:background="@color/primaryLightColor"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logooo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/contactimg"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="للتــواصل معنــا برجـاء الاتصــال علــى          19777 "
+        android:textColor="@color/black"
+        android:id="@+id/contctt"
+        />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contctt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="أو مراسلتــنا علــى البــريد الالكترونى                        X_team@Docguide.com "
+        android:textColor="@color/black"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="false"
+    >
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/doctorimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/primaryColor"
+        app:civ_border_width="5dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="15"
+         app:civ_shadow_color="@color/primaryLightColor"
+            android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/docname"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toLeftOf="@id/doctorimg"
+        android:text="Doctor name"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        />
+    <TextView
+        android:id="@+id/docspecc"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/docname"
+        android:layout_toLeftOf="@id/doctorimg"
+        android:text="Speciality"
+        android:layout_width="250dp"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        />
+
+
+    <TextView
+        android:layout_below="@id/docspecc"
+        android:textColor="#000"
+        android:id="@+id/docacadm"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toLeftOf="@id/doctorimg"
+        android:text="acadimic"
+        android:textSize="16dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_below="@id/docacadm"
+        android:textColor="#000"
+        android:id="@+id/docnum"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toLeftOf="@id/doctorimg"
+        android:text="Rate"
+        android:textSize="16dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"/>
+
+
+
+
+</RelativeLayout>
